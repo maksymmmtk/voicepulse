@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoisePulse | Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/VP favicon.svg">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content-wrapper">
+      <header class="auth-header">
+        <section class="auth-header-section">
+          <a class="logo" href="/"
+        ><img
+          class="logo-header"
+          src="/images/VP logo black.svg"
+          alt="logo VoisePulse"
+      /></a>
+    </section>
+      </header>
+      <div class="form-container">
+        <div class="form-row">
+          <div class="form-column">
+            <div class="form-content">
+              <h1 class="form-title">Створити акаунт</h1>
+              <p class="login-link">
+                <span>Вже маєте акаунт?</span> <a href="/login">Увійти</a>
+              </p>
+              <form method="post" action="/signup/signup-success">
+                <div class="name-fields">
+                  <div class="first-name-field">
+                    <label for="first_name" class="first-name-label">Ім'я</label>
+                    <input type="text" id="firstName" class="first-name-input" name="firstName"/>
+                  </div>
+                  <div class="last-name-field">
+                    <label for="last_name" class="last-name-label">Прізвище</label>
+                    <input type="text" id="lastName" class="last-name-input" name="lastName"/>
+                  </div>
+                </div>
+                <div class="email-field">
+                    <label for="email" class="email-label">Адреса електронної пошти</label>
+                    <input type="email" id="email" class="email-input" name="email"/>
+                </div>
+                <div class="password-fields">
+                  <div class="password-field">
+                    <label for="password" class="password-label">Пароль</label>
+                    <input type="password" id="password" class="password-input" />
+                  </div>
+                  <div class="confirm-password-field">
+                    <label for="confirmPassword" class="confirm-password-label">Підтвердіть пароль</label>
+                    <input type="password" id="confirmPassword" class="confirm-password-input" name="password"/>
+                  </div>
+                </div>
+                <p class="password-hint">
+                  * Використовуйте 8 або більше символів із поєднанням літер і цифр
+                </p>
+                <div class="form-actions">
+                  <a href="/login" class="login-instead">Увійти замість реєстрації</a>
+                  <button type="submit" class="create-account-button">Створити акаунт</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="image-column">
+            <img src="/images/auth-ill.svg" alt="" class="signup-image" />
+          </div>
+        </div>
+      </div>
+      <footer class="auth-footer">
+        <p class="info__item">© 2024 VoicePulse. All rights reserved</p>
+      </footer>
+    </div>
+  </div>
+  <script src="/js/signup.js"></script>
+</body>
+</html>

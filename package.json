@@ -1,0 +1,19 @@
+{
+  "name": "voicepulse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Vodolazhenko_Vladyslav_&_Momotok_Maksym",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-mysql-session": "^3.0.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7"
+  }
+}

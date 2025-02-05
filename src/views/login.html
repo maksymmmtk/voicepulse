@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoisePulse | Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/VP favicon.svg">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content-wrapper">
+      <header class="auth-header">
+        <section class="auth-header-section">
+          <a class="logo" href="/"
+        ><img
+          class="logo-header"
+          src="/images/VP logo black.svg"
+          alt="logo VoisePulse"
+      /></a>
+    </section>
+      </header>
+      <div class="form-container">
+        <div class="form-row">
+          <div class="form-column">
+            <div class="form-content">
+              <h1 class="form-title">Увійти</h1>
+              <p class="login-link">
+                <span>Немає облікового запису? </span> <a href="/signup">Створіть його</a>
+              </p>
+              <form method="post" action="/login/login-success">
+                <div class="email-field">
+                    <label for="email" class="email-label">Адреса електронної пошти</label>
+                    <input type="email" id="email" class="email-input" name="email"/>
+                </div>
+                <div class="password-fields">
+                  <div class="password-field">
+                    <label for="password" class="password-label">Пароль</label>
+                    <input type="password" id="password" class="password-input" name="password"/>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <a href="/contact" class="login-instead">Забули пароль?</a>
+                  <button type="submit" class="create-account-button">Увійти</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="image-column">
+            <img src="/images/auth-ill.svg" alt="" class="signup-image" />
+          </div>
+        </div>
+      </div>
+      <footer class="auth-footer">
+        <p class="info__item">© 2024 VoicePulse. All rights reserved</p>
+      </footer>
+    </div>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
+</html>
